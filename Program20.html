@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="Author" content="Vaibhav Balooni">
+        <meta name="Charset" content="UTF-8">
+    </head>
+    <body> 
+        <script type="text/javascript">
+            function factorial(){   
+                
+            innerHTML="Factorial is:"
+            let a = parseInt(prompt('Enter a positive integer: '));
+            if(a<0){
+                document.getElementById('A').innerHTML="Negative Number."
+            }
+            else if (a==0) {
+                document.getElementById('A').innerHTML="Factorial is 1."
+            }
+            else{
+                let fact = 1;
+                for (let i = 1; i<=a; i++) {
+                    fact *= i;
+                    document.getElementById('A').innerHTML=("Factorial is "+fact)
+            }
+            }
+        }
+        </script>
+        <form >
+            <input type="button" value="Click Me!" onclick="factorial()">
+        </form>
+        <p id="A"></p>
+    </body>
+</html>

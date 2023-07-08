@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="Author" content="Vaibhav Balooni">
+        <meta name="Charset" content="UTF-8">
+    </head>
+    <style>
+        @keyframes Down-Right {
+            0% {left:10px; top: 10px}
+            50% {left:460px; top: 460px}
+            100% {left:10px; top: 10px}
+        }
+        @keyframes Down-Left {
+            0% {left:460px; top: 10px}
+            50% {left:10px; top: 460px}
+            100% {left:460px; top: 10px}
+        }
+        div{
+            height: 50px;
+            width: 50px;
+        }
+        #A{
+            background-color: black;
+            position: absolute;
+            animation-name:Down-Right;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+        #B{
+            background-color: blueviolet;
+            position: absolute;
+            left: 460px;           
+            animation-name:Down-Left;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+        #C{
+            height: 500px;
+            width: 500px;
+            border: solid 2px black;
+            position: relative;
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+    <body>
+        <div id="A"></div>
+        <div id="B"></div>
+        <div id="C"></div>
+    </body>
+</html>
